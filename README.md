@@ -8,18 +8,24 @@ A Python-based security application designed to monitor file systems for suspici
 - **Intelligent Threat Detection**: Pattern-based detection of ransomware-like activities
 - **Automated Backup System**: Creates timestamped backups with configurable retention
 - **Automated Recovery**: Restores files from backups when threats are detected
+- **Web Dashboard**: Professional web interface with real-time monitoring and controls
+- **Interactive Demonstrations**: Built-in ransomware simulation with web-based controls
 - **Comprehensive Logging**: Detailed logging of all system activities and security events
 - **Command-line Interface**: Easy-to-use CLI for system management
-- **Demonstration Tools**: Built-in ransomware simulation for testing and demonstration
+- **Real-time Statistics**: Live charts and metrics for system performance
 
 ## 📁 Project Structure
 
 ```
 ransomware-detection-tool/
 ├── main.py                          # Main entry point and CLI
+├── web_app.py                       # Web dashboard application
+├── start_dashboard.py               # Dashboard startup script
 ├── demo.py                          # Comprehensive demonstration script
 ├── config.json                      # Configuration file
 ├── requirements.txt                 # Python dependencies
+├── templates/                       # Web dashboard templates
+│   └── dashboard.html              # Main dashboard interface
 ├── src/                            # Source code
 │   ├── __init__.py
 │   ├── automated_response.py       # Automated response system
@@ -53,7 +59,18 @@ ransomware-detection-tool/
 
 ## 🎯 Quick Start
 
-### 1. Basic Usage
+### 1. Web Dashboard (Recommended)
+```bash
+# Start the web dashboard
+python start_dashboard.py
+```
+Then open your browser to `http://localhost:5000` for the full web interface with:
+- Real-time monitoring controls
+- Interactive ransomware simulation
+- Live statistics and charts
+- System logs and backup management
+
+### 2. Command Line Interface
 ```bash
 # Start monitoring with default configuration
 python main.py start
@@ -65,13 +82,13 @@ python main.py status
 python main.py stop
 ```
 
-### 2. Run Complete Demonstration
+### 3. Complete Demonstration
 ```bash
 # Run comprehensive demonstration
 python demo.py
 ```
 
-### 3. Test with Ransomware Simulation
+### 4. Manual Ransomware Simulation
 ```bash
 # Simulate different types of ransomware attacks
 python src/ransomware_simulator.py crypto_locker --intensity moderate
@@ -114,11 +131,23 @@ Edit `config.json` to customize system behavior:
 
 ## 🎮 Demonstration & Testing
 
-### Interactive Demo Launcher (Recommended)
+### Web Dashboard (Best for Interviews)
+```bash
+python start_dashboard.py
+```
+Professional web interface featuring:
+- **Real-time Monitoring**: Live system status and statistics
+- **Interactive Controls**: Start/stop monitoring with one click
+- **Ransomware Simulation**: Web-based attack simulation controls
+- **Live Charts**: Real-time data visualization
+- **System Logs**: Live log streaming and filtering
+- **Backup Management**: Visual backup status and history
+
+### Interactive Demo Launcher
 ```bash
 python run_demo.py
 ```
-Provides an interactive menu with options for:
+Command-line menu with options for:
 - Complete system demonstration
 - Individual component testing
 - Custom ransomware simulations
@@ -159,6 +188,31 @@ python src/demo_automated_response.py
 # Test recovery engine
 python src/demo_recovery.py
 ```
+
+## 🌐 Web Dashboard Interface
+
+### Starting the Dashboard
+```bash
+python start_dashboard.py          # Auto-opens browser to http://localhost:5000
+# OR
+python web_app.py                  # Manual start (navigate to localhost:5000)
+```
+
+### Dashboard Features
+- **System Control Panel**: Start/stop monitoring with visual status indicators
+- **Real-time Statistics**: Live updating charts and metrics
+- **Threat Simulation**: Interactive ransomware attack simulation
+- **Backup Viewer**: Visual backup history and file management
+- **Live Log Stream**: Real-time system logs with filtering
+- **Configuration Management**: Web-based settings adjustment
+- **Mobile Responsive**: Works on desktop, tablet, and mobile devices
+
+### Perfect for Demonstrations
+The web dashboard is ideal for:
+- **Job Interviews**: Professional visual interface
+- **Presentations**: Real-time data visualization
+- **Training Sessions**: Interactive learning environment
+- **System Monitoring**: Production-ready monitoring interface
 
 ## 🖥️ Command Line Interface
 
@@ -370,36 +424,48 @@ This project is intended for educational use. Please ensure compliance with your
 
 ## 🚀 Get Started in 3 Steps
 
-### Step 1: Install
+### Step 1: Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### Step 2: Run Demo
+### Step 2: Launch Web Dashboard
 ```bash
-python run_demo.py
+python start_dashboard.py
 ```
+This automatically opens your browser to the professional web interface.
 
-### Step 3: Explore
-- Try different ransomware simulations
-- Customize configuration settings
-- Examine the source code
-- Build your own extensions
+### Step 3: Start Demonstrating
+- Click "Start Monitoring" in the web dashboard
+- Run ransomware simulations with the web controls
+- Watch real-time threat detection and response
+- Show live statistics and system logs
 
-**That's it!** You now have a fully functional ransomware detection and recovery system ready for education, training, and research.
+**Perfect for Interviews!** The web dashboard provides a professional, visual interface that showcases your full-stack development skills alongside cybersecurity expertise.
+
+### Alternative: Command Line Demo
+```bash
+python run_demo.py              # Interactive command-line demo
+python demo.py                  # Complete automated demonstration
+```
 
 ## 🎓 Project Highlights
 
 ### Core Components Implemented
+- **Web Dashboard**: Professional Flask-based interface with real-time monitoring
 - **File System Monitor**: Real-time monitoring using Python watchdog library
 - **Threat Detection Engine**: Multi-factor ransomware behavior analysis
 - **Backup Manager**: Automated, versioned backup system with integrity verification
 - **Recovery Engine**: Intelligent file restoration with multiple recovery modes
 - **Automated Response System**: Integrated threat response and recovery automation
+- **Interactive Simulation**: Web-based ransomware attack simulation controls
 - **Command-Line Interface**: Full-featured CLI with real-time monitoring display
 - **Demonstration Suite**: Comprehensive testing and educational tools
 
 ### Key Achievements
+- **Professional Web Interface**: Modern, responsive dashboard perfect for interviews
+- **Real-time Data Visualization**: Live charts and statistics using Chart.js
+- **Full-Stack Implementation**: Flask backend with WebSocket real-time updates
 - **Zero-Configuration Setup**: Works out of the box with sensible defaults
 - **Educational Focus**: Designed specifically for cybersecurity learning
 - **Safe Testing Environment**: Simulated attacks with no actual malware

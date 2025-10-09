@@ -11,7 +11,7 @@ from dataclasses import dataclass
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler, FileSystemEvent
 
-from .logger import Logger
+from logger import Logger
 
 
 @dataclass

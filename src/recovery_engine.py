@@ -12,7 +12,7 @@ import hashlib
 from typing import List, Optional, Dict, Tuple
 from dataclasses import dataclass
 from pathlib import Path
-from src.backup_manager import BackupManager, BackupRecord
+from backup_manager import BackupManager, BackupRecord
 
 
 @dataclass

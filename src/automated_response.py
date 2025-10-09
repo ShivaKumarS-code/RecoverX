@@ -15,11 +15,11 @@ from typing import List, Dict, Optional, Callable
 from dataclasses import dataclass
 from threading import Thread, Event, Lock
 
-from .threat_detector import ThreatDetector, DetectionResult
-from .backup_manager import BackupManager, BackupRecord
-from .recovery_engine import RecoveryEngine, RecoveryResult
-from .file_monitor import FileSystemMonitor, FileEvent
-from .logger import Logger
+from threat_detector import ThreatDetector, DetectionResult
+from backup_manager import BackupManager, BackupRecord
+from recovery_engine import RecoveryEngine, RecoveryResult
+from file_monitor import FileSystemMonitor, FileEvent
+from logger import Logger
 
 
 @dataclass
