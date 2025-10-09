@@ -1,4 +1,4 @@
-# Ransomware Detection & Recovery Tool
+# RecoverX
 
 A Python-based security application designed to monitor file systems for suspicious activities indicative of ransomware attacks and provide automated backup and recovery capabilities. This project demonstrates cybersecurity concepts through practical implementation, featuring real-time monitoring, threat detection, and automated recovery systems.
 
