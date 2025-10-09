@@ -1,0 +1,8 @@
+# Ransomware Detection Tool Dependencies
+# Core monitoring library
+watchdog>=3.0.0
+
+# Optional dependencies for future features
+# smtplib (built-in) - for email alerts
+# hashlib (built-in) - for file integrity checking
+# tkinter (built-in) - for GUI interface

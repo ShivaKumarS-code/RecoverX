@@ -1,0 +1,10 @@
+{
+    "monitored_directory": "./test_files",
+    "backup_directory": "./backups",
+    "log_directory": "./logs",
+    "alert_email": "",
+    "detection_threshold": 5,
+    "backup_retention": 5,
+    "time_window_seconds": 10,
+    "suspicious_extensions": [".encrypted", ".locked", ".crypto", ".crypt"]
+}
